@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-vrwa
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/pmacik-testing/tkrw-pr712-0075-0018-tenant/tkrw-pr712-0075-0018-app/devfile-sample-vrwa@sha256:a41d02dbefb329ade3d5f7312c3e280bab95ec606f91a1250d3699d0030a941d
+        name: my-nodejs
+        resources: {}
+status: {}
